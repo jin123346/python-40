@@ -51,6 +51,47 @@ nothing = None          # NoneType
 print(type(nothing))
 
 
+#문자열 '작은따옴표, 큰따옴표, 삼중따옴표' 활용 예시
+single_quote_str = 'This is a string with single quotes.'
+double_quote_str = "This is a string with double quotes."
+triple_quote_str = """This is a string with triple quotes.  It can span multiple lines."""
+print(single_quote_str)
+print(double_quote_str)
+print(triple_quote_str)
+# 출력 결과
+# This is a string with single quotes.
+# This is a string with double quotes.
+# This is a string with triple quotes.  It can span multiple lines.
+# 요약
+# - 작은따옴표(')와 큰따옴표(")는 동일
+# - 삼중따옴표(""" 또는 ''')는 여러 줄의 문자열을 작성할 때 유용
+#작은따옴표,큰따옴표 사용하려면?
+escaped_single_quote = 'It\'s a sunny day.'  # 작은따옴표 안에 작은따옴표 사용
+escaped_double_quote = "He said, \"Hello!\""  # 큰따옴표 안에 큰따옴표 사용
+print(escaped_single_quote)
+print(escaped_double_quote)     
+# 출력 결과
+# It's a sunny day.
+# He said, "Hello!"
+
+# 요약
+# - 작은따옴표 안에 작은따옴표를 사용하려면 백슬래시(\)로 이스케이프
+# - 큰따옴표 안에 큰따옴표를 사용하려면 백슬래시(\)로 이스케이프
+
+#삼중따옴표 활용 예시
+multi_line_str = """This is a string that spans
+multiple lines. It preserves line breaks
+and spaces."""  
+print(multi_line_str)   
+# 출력 결과
+# This is a string that spans
+# multiple lines. It preserves line breaks
+# and spaces.
+# 요약
+# - 삼중따옴표는 여러 줄의 문자열을 작성할 때 유용하며, 줄 바꿈과 공백을 그대로 유지함
+
+
+
 # 출력 결과
 # <class 'int'> <class 'float'> <class 'complex'>
 # <class 'str'>
@@ -205,3 +246,27 @@ print("사전:", person)  # 출력: 사전: {'name': 'Alice', 'age': 31, 'city':
 # 요약
 # - 집합은 중복된 값을 허용하지 않으며, 새로운 값을 추가할 수 있습니다.
 # - 사전은 키-값 쌍으로 데이터를 저장하며, 값을 수정하거나 새로운 키-값 쌍을 추가할 수 있습니다.
+
+#문자열과 숫자형의 연산 예시
+# 문자열과 숫자형의 연산 예시
+str1 = "Hello"
+str2 = "World"
+num1 = 10
+num2 = 5
+# 문자열 연산
+concat_str = str1 + " " + str2  # 문자열 연결
+repeat_str = str1 * 3            # 문자열 반복
+print("문자열 연결:", concat_str)  # 출력: 문자열 연결: Hello World
+print("문자열 반복:", repeat_str)   # 출력: 문자열 반복: HelloHelloHello
+# 숫자형 연산
+sum_num = num1 + num2            # 덧셈
+diff_num = num1 - num2           # 뺄셈
+prod_num = num1 * num2           # 곱셈
+quot_num = num1 / num2           # 나눗셈
+print("숫자 덧셈:", sum_num)        # 출력: 숫자 덧셈: 15
+print("숫자 뺄셈:", diff_num)       # 출력: 숫
+print("숫자 곱셈:", prod_num)       # 출력: 숫자 곱셈: 50
+print("숫자 나눗셈:", quot_num)     # 출력: 숫
+print("숫자 나눗셈:", quot_num)     # 출력: 숫자 나눗셈: 2.0
+
+
