@@ -116,6 +116,37 @@ print("부분 문자열 (7-끝):", substring3)  # 출력: 부분 문자열 (7-�
 # %x: 16진수 (hexadecimal)
 # %% : 퍼센트 기호 (%) 출력
 
+# 문자열 정렬
+text = "Python"
+left_aligned = text.ljust(10, '-')  # 왼쪽 정렬
+right_aligned = text.rjust(10, '-') # 오른쪽 정렬
+center_aligned = text.center(10, '-') # 가운데 정렬
+print("왼쪽 정렬:", left_aligned)    # 출력: 왼쪽 정렬: Python----
+print("오른쪽 정렬:", right_aligned)  # 출력: 오른쪽 정렬: ----Python
+print("가운데 정렬:", center_aligned)  # 출력: 가운데 정렬: --Python---
+# 출력 결과 
+# 왼쪽 정렬: Python----
+# 오른쪽 정렬: ----Python
+# 가운데 정렬: --Python---
+# 요약
+# - ljust(), rjust(), center() 메서드를 사용하여 문자열을 원하는 방향으로 정렬할 수 있습니다.
+# - 두 번째 인자로 채울 문자를 지정할 수 있습니다.
 
+# 문자열 %로 공백 주기
+text = "Data"
+padded_left = "%-10s" % text   # 왼쪽 공백
+padded_right = "%10s" % text  # 오른쪽 공백
+print("왼쪽 공백:", repr(padded_left))   # 출력: 왼쪽 공백: 'Data      '
+print("오른쪽 공백:", repr(padded_right))  # 출력: 오른쪽 공백: '      Data'
+# 출력 결과
+# 왼쪽 공백: 'Data      '
+# 오른쪽 공백: '      Data'
+# 요약          
+# - % 연산자를 사용하여 문자열에 공백을 추가할 수 있습니다.
+# - %-10s는 왼쪽 정렬, %10s는 오른쪽 정렬을 의미합니다.
+# 요약
+# - 문자열 인덱싱과 슬라이싱을 통해 개별 문자 및 부분 문자열에 접근할 수 있습니다.
+# - 문자열 연결과 반복을 통해 새로운 문자열을 생성할 수 있습니다.
+# - 다양한 문자열 메서드를 활용하여 문자열을 조작할 수 있습니다.
 
 
